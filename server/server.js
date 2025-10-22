@@ -4,7 +4,8 @@ import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
 
 // import the router from your routes file
-
+import customItems from './routes/customItems.js'
+import features from './routes/features.js'
 
 dotenv.config()
 
@@ -23,6 +24,9 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
+app.use('/api/custom-items', customItems)
+app.use('/api/features', features)
+
 
 
 if (process.env.NODE_ENV === 'production') {
