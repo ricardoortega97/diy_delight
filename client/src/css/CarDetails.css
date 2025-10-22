@@ -1,0 +1,150 @@
+.car-details-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.car-details-header {
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-details-name {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.car-details-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.car-details-section {
+    margin-bottom: 30px;
+}
+
+.car-details-section h3 {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.feature-item {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-name {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.option-name {
+    color: #333;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+}
+
+.option-price {
+    color: #007bff;
+    font-weight: 500;
+    display: block;
+    margin-top: 5px;
+}
+
+.car-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.back-button, .edit-button, .delete-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Loading and error states */
+.loading-spinner, .error-message {
+    text-align: center;
+    padding: 40px;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .car-details-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .car-details-price {
+        margin-top: 10px;
+    }
+    
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+}

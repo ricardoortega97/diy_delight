@@ -1,0 +1,213 @@
+.edit-car-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.edit-car-container h1 {
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+}
+
+.edit-car-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+.form-section h2 {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-section input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: right;
+    margin: 20px 0;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.form-actions-left {
+    flex: 0 0 auto;
+}
+
+.form-actions-right {
+    display: flex;
+    gap: 15px;
+}
+
+.cancel-button, .save-button, .delete-button {
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+.save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.delete-button:disabled {
+    background-color: #e99a9a;
+    cursor: not-allowed;
+}
+
+.loading-spinner, .error-message {
+    text-align: center;
+    padding: 40px;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+/* Reuse styles from Features.css for the feature buttons */
+.car-options-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+}
+
+.feature-button-container {
+    flex: 0 0 auto;
+}
+
+.feature-button {
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5a5a5a;
+    color: white;
+    border: none;
+    transition: all 0.2s;
+}
+
+.feature-button.selected {
+    background-color: #007bff;
+}
+
+.selected-option-name {
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.convertible-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.convertible-checkbox label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.convertible-checkbox input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .edit-car-container {
+        padding: 15px;
+    }
+    
+    .edit-car-form {
+        padding: 20px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-actions-left, .form-actions-right {
+        width: 100%;
+    }
+    
+    .form-actions-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cancel-button, .save-button, .delete-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
